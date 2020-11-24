@@ -162,7 +162,7 @@ nav ul li {
 }
 
 /* ------------------------------------------------------------ Buat HP -------------------------------------------------- */
-@media (max-width:576px) {
+@media only screen and (max-width:576px) {
     .nav {
         height: 90px;
         width: 100%;
@@ -308,7 +308,7 @@ nav ul li {
 }
 
 /* --------------------------------------------    Buat Tablet ------------------------------------------------ */
-@media (max-width:768px) {
+@media only screen and (max-width:768px) {
     .nav {
         height: 90px;
         width: 100%;
