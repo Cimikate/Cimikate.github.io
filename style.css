@@ -161,59 +161,294 @@ nav ul li {
     transform: translateY(8px);
 }
 
-@media screen (max-width:576px) {
-    .projects-section-header {
-        font-size: 25px;
-    }
-}
-
-
-
-
-@media (max-width: 75em) {
-    html {
-        font-size: 60%;
-    }
-}
-
-/* 980px / 16px = 61.25em */
-@media (max-width: 61.25em) {
-    html {
-        font-size: 58%;
-    }
-}
-
-/* 460px / 16px = 28.75em */
-@media (max-width: 28.75em) {
-    html {
-        font-size: 55%;
-    }
-}
-
-@media (max-width: 28.75em) {
+/* ------------------------------------------------------------ Buat HP -------------------------------------------------- */
+@media (max-width:576px) {
     .nav {
+        height: 90px;
+        width: 100%;
+    }
+
+    nav ul {
+
+        justify-content: space-between;
+    }
+
+    nav ul li {
+        list-style: none;
+        justify-content: space-between;
+    }
+
+
+
+    .nav-list a {
+        display: block;
+        font-size: 1.3rem;
+        padding: 2rem;
+        color: white;
+        text-decoration: none;
+    }
+
+    /* secton welcome */
+
+    .welcome {
+        display: flex;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(62deg, #5c6992 0%, #293283 100%);
     }
 
-    .nav-list {
-        margin: 0 1rem;
+    .welcome h1 {
+        font-size: 35px;
+        color: white;
     }
-}
 
-@media (max-width: 28.75em) {
+    .welcome p {
+        font-size: 20px;
+        color: white;
+        opacity: 80%;
+        font-style: italic;
+    }
+
+    /* projects */
+
+    .projects-all {
+        background-color: #4082a8b7;
+    }
+
+
+    .projects-header {
+        border-bottom: 1px solid white;
+    }
+
     .projects-section-header {
-        font-size: 4rem;
+        border-bottom: 1px solid white;
+        font-size: 30px;
+        color: white;
+        margin-top: 6rem;
     }
-}
 
-@media (max-width: 30.625em) {
+    .open {
+        margin-bottom: 8rem;
+        color: white;
+        font-size: 20px;
+    }
+
     .projects-section {
-        padding: 6rem 1rem;
+        padding: 6rem 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 2rem;
+        width: 65%;
+        font-size: 30px;
+        background-color: #4881a1;
+    }
+
+    .projects-grid {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .projects-section a {
+        color: white;
+        font-size: 18px;
+    }
+
+    .projects-section a span {
+        color: #4881a1;
+    }
+
+    .projects-section a:hover span {
+        color: white;
+    }
+
+    .contact-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        background: #639aaa;
+    }
+
+    .contact-section-header>h2 {
+        font-size: 30px;
+    }
+
+
+    .contact-section-header>p {
+        font-style: italic;
+        font-size: 20px;
+    }
+
+    .contact-links {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        max-width: 980px;
+        margin-top: 4rem;
+        flex-wrap: wrap;
+    }
+
+    .contact-details {
+        font-size: 20px;
+        text-shadow: 2px 2px 1px #1f1f1f;
+        transition: transform 0.3s ease-out;
+        margin-left: 50px;
+        transform: translateX(-18px);
     }
 }
 
-@media (max-width: 28.75em) {
+/* --------------------------------------------    Buat Tablet ------------------------------------------------ */
+@media (max-width:768px) {
+    .nav {
+        height: 90px;
+        width: 100%;
+    }
+
+    nav ul {
+
+        justify-content: space-between;
+    }
+
+    nav ul li {
+        list-style: none;
+        justify-content: space-between;
+    }
+
+
+
+    .nav-list a {
+        display: block;
+        font-size: 1.3rem;
+        padding: 2rem;
+        color: white;
+        text-decoration: none;
+    }
+
+    /* secton welcome */
+
+    .welcome {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(62deg, #5c6992 0%, #293283 100%);
+    }
+
+    .welcome h1 {
+        font-size: 35px;
+        color: white;
+    }
+
+    .welcome p {
+        font-size: 20px;
+        color: white;
+        opacity: 80%;
+        font-style: italic;
+    }
+
+    /* projects */
+
+    .projects-all {
+        background-color: #4082a8b7;
+    }
+
+
+    .projects-header {
+        border-bottom: 1px solid white;
+    }
+
+    .projects-section-header {
+        border-bottom: 1px solid white;
+        font-size: 30px;
+        color: white;
+        margin-top: 6rem;
+    }
+
+    .open {
+        margin-bottom: 8rem;
+        color: white;
+        font-size: 20px;
+    }
+
+    .projects-section {
+        padding: 6rem 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 2rem;
+        width: 65%;
+        font-size: 30px;
+        background-color: #4881a1;
+    }
+
+    .projects-grid {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .projects-section a {
+        color: white;
+        font-size: 18px;
+    }
+
+    .projects-section a span {
+        color: #4881a1;
+    }
+
+    .projects-section a:hover span {
+        color: white;
+    }
+
+    .contact-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        background: #639aaa;
+    }
+
     .contact-section-header>h2 {
-        font-size: 4rem;
+        font-size: 30px;
+    }
+
+
+    .contact-section-header>p {
+        font-style: italic;
+        font-size: 20px;
+    }
+
+    .contact-links {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        max-width: 980px;
+        margin-top: 4rem;
+        flex-wrap: wrap;
+    }
+
+    .contact-details {
+        font-size: 20px;
+        text-shadow: 2px 2px 1px #1f1f1f;
+        transition: transform 0.3s ease-out;
+        margin-left: 50px;
+        transform: translateX(-18px);
     }
 }
